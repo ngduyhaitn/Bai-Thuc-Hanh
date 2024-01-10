@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="robots" content="index, nofollow">
+		<title>Cong ty du lich</title>
+		<link rel="stylesheet" type="text/css" media="all" href="style.css">
+		<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+	</head>
+	<body class="body">
+		<div class="main-content" id="">
+			<div class = "container">
+				<h1>Địa điểm du lịch</h1>
+				<div class = "list">
+					<div class = "item">
+						<div class="thumb" onclick="openLightbox(this.querySelector('img'))">
+							<img src="images/ha_noi.jpg">
+						</div>
+						<div class = "content">
+							<h3 class = "title">Hà Nội</h3>
+							<p class = "desc">Thủ đô Hà Nội</p>
+						</div>
+					</div>
+					<div class = "item">
+						<div class = "thumb" onclick="openLightbox(this.querySelector('img'))">
+							<img src="images/TN.jpg">
+						</div>
+						<div class = "content">
+							<h3 class = "title">Thái Nguyên</h3>
+							<p class = "desc">Thành phố Thái Nguyên</p>
+						</div>
+					</div>
+					<div class = "item">
+						<div class = "thumb" onclick="openLightbox(this.querySelector('img'))">
+							<img src="images/da_nang.jpg">
+						</div>
+						<div class = "content">
+							<h3 class = "title">Đà Nẵng</h3>
+							<p class = "desc">Thành phố Đà Nẵng</p>
+						</div>
+					</div>
+					<div class = "item">
+						<div class = "thumb" onclick="openLightbox(this.querySelector('img'))">
+							<img src="images/TPHCM.jpg">
+						</div>
+						<div class = "content">
+							<h3 class = "title">TP. Hồ Chí Minh</h3>
+							<p class = "desc">Thành phố Hồ Chí Minh</p>
+						</div>
+					</div>
+					<div class = "item">
+						<div class = "thumb" onclick="openLightbox(this.querySelector('img'))">
+							<img src="images/phu_quoc.jpg">
+						</div>
+						<div class = "content">
+							<h3 class = "title">Phú Quốc</h3>
+							<p class = "desc">Phú Quốc</p>
+						</div>
+					</div>
+				</div>
+				
+				
+				<form id="tourForm" class=" container m-auto mt-[20px] ">
+				<div class="name flex mb-[10px]">
+				<label for="name" class="w-1/6">Tên:</label>
+				<input type="text" id="name" name="name" class="border border-solid border-neutral-400" required />
+				</div>
+				<div class="email flex mb-[10px]">
+				<label for="email" class="w-1/6">Email:</label>
+				<input type="email" id="email" name="email" class="border border-solid border-neutral-400" required />
+				</div>
+				<div class="add flex mb-[10px]">
+				<label for="destination" class="w-1/6">Điểm Đến:</label>
+				<input type="text" id="destination" name="destination" class="border border-solid border-neutral-400" required />
+				</div>
+				<div class="date flex mb-[10px]">
+				<label for="departure-date" class="w-1/6">Ngày Khởi Hành:</label>
+				<input type="date" id="date" name="departure-date" class="border border-solid border-neutral-400" required />
+				</div>
+				<button type="button" onclick="submitTourForm()"
+				class="bg-blue-200 text-white font-medium mb-3 py-2 px-4 rounded">Submit</button>
+				</form>
+				
+			  <h1 class="text-[24px] font-medium mb-3 my-[20px] container m-auto">Danh Sách </h1>
+			  <table class="container m-auto mb-[30px]">
+				<thead>
+				  <tr>
+					<th>Tên</th>
+					<th>Email</th>
+					<th>Điểm Đến</th>
+					<th>Ngày Khởi Hành</th>
+				  </tr>
+				</thead>
+				<tbody id="comments"></tbody>
+			  </table>
+
+			</div>
+		</div>
+	</div>
+	
+	<div class="fixed top-0 left-0 w-full h-full bg-[#000000db] justify-center items-center z-[9999] hidden lightbox "
+		id="imageLightbox" onclick="closeLightbox()">
+		<span class="absolute top-[10px] right-[10px] cursor-pointer text-[#FFF] text-[20px] hover:text-[#ff0000]"
+		  onclick="closeLightbox()">&times;</span>
+		<img src="" alt="Image" id="popup-img" class="w-1/2 h-1/2 ">
+	  </div>
+
+	  <script src="./custom.js"></script>
+	  <script src="https://cdn.tailwindcss.com"></script>
+	</body>
+</html>

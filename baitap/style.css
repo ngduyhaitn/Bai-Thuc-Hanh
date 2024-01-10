@@ -1,0 +1,40 @@
+.container {
+	width: 100%;
+	max-width: 1260px;
+	padding: 0 30px;
+	margin: 0 auto;
+}
+.list {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -15px;
+	margin-right: -15px;
+}
+.item {
+	width: 50%;
+	padding: 0 15px;
+	box-sizing: border-box;
+	margin-bottom: 30px;
+}
+.thumb {
+	position: relative;
+	padding-bottom: 50%;
+}
+.thumb img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
+}
+h1 {
+	text-align: center;
+	padding: 60px 40px;
+}
+input {
+	border: solid 1px #000;
+}
+body p {
+	margin-bottom: 15px;
+}
